@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="Desenvolvimento Web, HTML, CSS, JavaScript"
+    />
+    <meta name="author" content="Flávia" />
+    <title>Primeira Aula</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 20px;
+      }
+
+      nav {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 20px;
+        gap: 10px;
+      }
+
+      nav a {
+        color: tomato;
+        text-decoration: none;
+      }
+
+      nav a:hover {
+        color: rgb(255, 127, 127);
+        text-decoration: underline;
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      h1,
+      h2 {
+        color: tomato;
+        padding: 10px 0;
+      }
+
+      h3 {
+        color: rgb(255, 127, 127);
+        padding: 10px 0;
+      }
+
+      section {
+        margin: 20px 0;
+      }
+
+      blockquote {
+        margin: 1em 0;
+        padding: 1em 1.5em;
+        border-left: 4px solid #ccc;
+        background-color: #f9f9f9;
+        font-style: italic;
+      }
+
+      cite {
+        display: block;
+        text-align: right;
+        margin-top: 1em;
+        font-style: normal;
+        font-weight: bold;
+      }
+
+      ul,
+      ol {
+        list-style-position: inside;
+      }
+
+      table {
+        width: 80%;
+        margin: 20px auto;
+        border-collapse: collapse;
+        font-family: Arial, sans-serif;
+      }
+
+      thead {
+        background-color: tomato;
+        color: white;
+      }
+
+      th,
+      td {
+        padding: 12px;
+        text-align: left;
+        border: 1px solid #ccc;
+      }
+
+      tbody tr:nth-child(even) {
+        background-color: #f9f9f9;
+      }
+
+      tbody tr:hover {
+        background-color: rgb(255, 242, 240);
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 500px;
+        margin: 20px auto;
+      }
+
+      .form-group {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        width: 100%;
+      }
+
+      .form-group label {
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+
+      .form-group input,
+      .form-group textarea {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+      }
+
+      .form-group input[type="submit"] {
+        background-color: tomato;
+        color: white;
+        cursor: pointer;
+      }
+
+      .form-group input[type="submit"]:hover {
+        background-color: rgb(255, 127, 127);
+      }
+
+      footer {
+        text-align: center;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <a href="home.html">Home</a>
+        <a href="sobre.html">Sobre mim</a>
+      </nav>
+      <h1>Aprendendo HTML e CSS na +PraTI</h1>
+    </header>
+    <hr />
+    <main>
+      <section>
+        <p>
+          Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros
+          commodo tempor.
+        </p>
+        <p>
+          Mussum Ipsum, cacilds vidis litro abertis. Per aumento de cachacis, eu
+          reclamis. Todo mundo vê os porris que eu tomo, mas ninguém vê os
+          tombis que eu levo! Suco de cevadiss deixa as pessoas mais
+          interessantis. <code>&lt;header&gt;</code> Admodum accumsan
+          disputationi eu sit. Vide electram sadipscing et per. Mé faiz
+          elementum girarzis, nisi eros vermeio. Si u mundo tá muito paradis?
+          Toma um mé que o <sub>mundo</sub> vai girarzis! Nec orci ornare
+          consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis.
+          Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus
+          tristique interdum.
+        </p>
+      </section>
+      <hr />
+      <section>
+        <h2>Abreviações e Siglas</h2>
+        <p>
+          <abbr title="Hypertext Markup Language">HTML</abbr> e
+          <abbr title="Cascading Style Sheets">CSS</abbr>
+        </p>
+      </section>
+      <section>
+        <h2>Citações</h2>
+        <blockquote cite="https://www.google.com.br/">
+          Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros
+          commodo tempor
+        </blockquote>
+        <cite>— Google</cite>
+        <br />
+        <p>Como disse Sócrates: <q>Só sei que nada sei.</q></p>
+      </section>
+      <hr />
+      <section>
+        <h2>Listas</h2>
+        <h3>Lista ordenada</h3>
+        <ol>
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+        </ol>
+        <h3>Lista não ordenada</h3>
+        <ul>
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+        </ul>
+        <h3>Lista de descrição</h3>
+        <dl>
+          <dt>HTML</dt>
+          <dd>Linguagem de marcação para a criação do conteúdo de um site.</dd>
+          <dt>CSS</dt>
+          <dd>Linguagem de marcação para a criação do design de um site.</dd>
+        </dl>
+      </section>
+      <hr />
+      <section>
+        <h2>Tabelas</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Nome</th>
+              <th>Idade</th>
+              <th>Cidade</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Ana</td>
+              <td>28</td>
+              <td>Fortaleza</td>
+            </tr>
+            <tr>
+              <td>Bruno</td>
+              <td>34</td>
+              <td>São Paulo</td>
+            </tr>
+            <tr>
+              <td>Carla</td>
+              <td>22</td>
+              <td>Curitiba</td>
+            </tr>
+            <tr>
+              <td>Diego</td>
+              <td>30</td>
+              <td>Recife</td>
+            </tr>
+            <tr>
+              <td colspan="3">Somatório das idades: 114</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <hr />
+      <section>
+        <h2>Formulários</h2>
+        <form>
+          <div class="form-group">
+            <label for="name">Nome:</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Digite seu nome"
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail:</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Digite seu e-mail"
+            />
+          </div>
+          <div class="form-group">
+            <label for="message">Mensagem:</label>
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Digite sua mensagem"
+            ></textarea>
+          </div>
+          <div class="form-group">
+            <input type="submit" value="Enviar" />
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>© 2025 - Desenvolvido por Flávia</p>
+    </footer>
+  </body>
+</html>
