@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aula 10 de Junho - Formulários</title>
+  <link rel="stylesheet" href="formularios.css" />
+</head>
+
+<body>
+  <div class="container">
+    <h2>Formulário de Cadastro</h2>
+    <form>
+      <div>
+        <label for="">Nome Completo:</label>
+        <input type="text" />
+      </div>
+
+      <div>
+        <label for="">E-mail:</label>
+        <input type="email" />
+      </div>
+
+      <div>
+        <label for="">Senha</label>
+        <input type="password" />
+      </div>
+
+      <div>
+        <label for="">Telefone</label>
+        <input type="tel" placeholder="Digite seu telefone" />
+      </div>
+
+      <div>
+        <label for="">Website</label>
+        <input type="url" />
+      </div>
+
+      <div>
+        <label for="">Data de Nascimento</label>
+        <input type="date" />
+      </div>
+
+      <div>
+        <label for="">Hora</label>
+        <input type="time" />
+      </div>
+
+      <div>
+        <label for="">Pesquisa</label>
+        <input type="search" />
+      </div>
+
+      <div>
+        <label for="">Quantidade</label>
+        <input type="number" />
+      </div>
+
+      <div>
+        <label for="">Cor Favorita</label>
+        <input type="color" />
+      </div>
+
+      <div>
+        <label>Gênero:</label>
+        <div class="inline-options">
+          <label><input type="radio" name="gender" value="male" /> Masculino</label>
+          <label><input type="radio" name="gender" value="female" /> Feminino</label>
+          <label><input type="radio" name="gender" value="other" /> Outro</label>
+        </div>
+      </div>
+
+      <div>
+        <label>Observações:</label>
+        <textarea placeholder="Digite aqui suas observações..."></textarea>
+      </div>
+
+      <div>
+        <label for="curriculo">Currículo (PDF ou DOC):</label>
+        <input type="file" id="curriculo" name="curriculo" accept=".pdf,.doc,.docx" />
+      </div>
+
+      <div>
+        <label for="estado">Estado:</label>
+        <select id="estado" name="estado">
+          <option value="">Selecione seu estado</option>
+          <option value="AC">Acre</option>
+          <option value="AL">Alagoas</option>
+          <option value="AP">Amapá</option>
+          <option value="AM">Amazonas</option>
+          <option value="BA">Bahia</option>
+          <option value="CE">Ceará</option>
+          <option value="DF">Distrito Federal</option>
+          <option value="ES">Espírito Santo</option>
+          <option value="GO">Goiás</option>
+          <option value="MA">Maranhão</option>
+          <option value="MT">Mato Grosso</option>
+          <option value="MS">Mato Grosso do Sul</option>
+          <option value="MG">Minas Gerais</option>
+          <option value="PA">Pará</option>
+          <option value="PB">Paraíba</option>
+          <option value="PR">Paraná</option>
+          <option value="PE">Pernambuco</option>
+          <option value="PI">Piauí</option>
+          <option value="RJ">Rio de Janeiro</option>
+          <option value="RN">Rio Grande do Norte</option>
+          <option value="RS">Rio Grande do Sul</option>
+          <option value="RO">Rondônia</option>
+          <option value="RR">Roraima</option>
+          <option value="SC">Santa Catarina</option>
+          <option value="SP">São Paulo</option>
+          <option value="SE">Sergipe</option>
+          <option value="TO">Tocantins</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="satisfacao">Nível de satisfação com o formulário:</label>
+        <input type="range" id="satisfacao" name="satisfacao" min="0" max="10" />
+      </div>
+
+      <div class="inline-options">
+        <label><input type="checkbox" name="terms" /> Quero assinar a Newsletter</label>
+      </div>
+
+      <div>
+        <button type="submit">Enviar Cadastro</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="tipos-inputs">
+    <h3>Tipos de inputs disponíveis em HTML</h3>
+    <ul>
+      <li>text</li>
+      <li>email</li>
+      <li>password</li>
+      <li>tel</li>
+      <li>url</li>
+      <li>date</li>
+      <li>time</li>
+      <li>search</li>
+      <li>number</li>
+      <li>color</li>
+      <li>radio</li>
+      <li>checkbox</li>
+      <li>file</li>
+      <li>range</li>
+      <li>hidden</li>
+      <li>submit</li>
+      <li>reset</li>
+      <li>button</li>
+      <li>image</li>
+      <li>datetime-local</li>
+      <li>month</li>
+      <li>week</li>
+    </ul>
+  </div>
+</body>
+
+</html>
